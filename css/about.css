@@ -17,9 +17,8 @@
   justify-content: center;
   align-items: center;
 }
-
+/* about me section */
 .about-me {
-  background: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,27 +44,198 @@
   color: #a8dadc;
   text-shadow: 0 8px 32px 0 #1d3557;
 }
-.bio {
+
+.about-content {
   display: flex;
   flex-direction: row;
-
-  align-items: center;
 }
+.my-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 55%;
+}
+
 .my-pic {
   height: 400px;
   width: 550px;
+  border-radius: 10px;
 }
-.bio-content {
+.my-details {
+  display: flex;
+  flex-direction: row;
+}
+.details {
+  color: #1d3557;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.about-icon {
+  color: #a8dadc;
+}
+.my-bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 45%;
+  margin: 5px;
 }
 
 .bio-text {
   color: #1d3557;
   font-size: 20px;
-  padding: 20px;
-  width: 80%;
+  margin: 20px;
 }
 
-.bio-details {
+.download-btn {
+  color: #a8dadc;
+  border: 2px solid #a8dadc;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.6s;
+}
+.download-btn:hover {
+  background-color: #a8dadc;
+  color: #1d3557;
+  border-color: #1d3557;
+}
+
+/* my resume section */
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding: 5px;
+  margin: 50px;
+}
+
+.sub-heading {
+  font-size: 50px;
+  color: #1d3557;
+}
+
+.resume-btns {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  font-size: 1.25em;
+  position: sticky;
+}
+.resume-button {
+  font-size: 0.938em;
+  margin-top: 2%;
+  height: 5vh;
+  width: 10vw;
+  transition: 0.6s;
+  color: #1d3557;
+  background-color: white;
+}
+.resume-button:hover {
+  color: #a8dadc;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.education {
+  border-right: 2px solid #1c6ea4;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}
+.work {
+  border: white;
+}
+.developement {
+  border-left: 2px solid #1c6ea4;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.resume-tooltip {
+  position: relative;
+}
+.resume-tooltip:hover .resume-tooltip-text {
+  visibility: visible;
+  transition: 0.3s;
+}
+.resume-tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  color: #a8dadc;
+
+  background-color: #1d3557;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  margin-left: -80px;
+}
+.input {
+  background-color: #457b9d;
+  color: #a8dadc;
+
+  padding: 30px;
+
+  border-radius: 10px;
+  font-size: 1.25em;
+  transition: 0.6s;
+  height: 50vh;
+  cursor: grab;
+}
+h6 {
+  font-size: 16px;
+  color: #a8dadc;
+  background-color: #1d3557;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  text-align: center;
+}
+h5 {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 16px;
+  font-weight: 100;
+  color: #1d3557;
+  text-shadow: 0px 0px 3px #a8dadc;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #a8dadc;
+  text-shadow: 0px 0px 3px #1d3557;
+}
+.descrp {
+  padding: 20px;
+  font-style: italic;
+  color: #f1faee;
+}
+.datentitle {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
