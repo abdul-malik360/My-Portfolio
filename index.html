@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul-Malik's Portfolio</title>
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/typing.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="home">
+      <nav>
+        <ul class="navbar-links">
+          <li>
+            <a href="/index.html" class="navbar-link">
+              <i class="fas fa-home nav-tooltip">
+                <span class="nav-tooltip-text">HOME</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/about.html" class="navbar-link">
+              <i class="fas fa-address-card nav-tooltip">
+                <span class="nav-tooltip-text">ABOUT</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/portfolio.html" class="navbar-link">
+              <i class="fas fa-briefcase nav-tooltip">
+                <span class="nav-tooltip-text">PORTFOLIO</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/testimonials.html" class="navbar-link">
+              <i class="fas fa-quote-left nav-tooltip">
+                <span class="nav-tooltip-text">TESTIMONIALS</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/contact.html" class="navbar-link">
+              <i class="fas fa-envelope nav-tooltip">
+                <span class="nav-tooltip-text">CONTACT ME</span>
+              </i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="home-container">
+        <h1 class="home-heading">Hi! I'm <span id="heading-typed"></span></h1>
+        <p class="home-statement">
+          I'm
+          <span class="statement-typed"></span>
+          <span class="cursor typing">&nbsp;</span>
+        </p>
+
+        <a class="welcome-btn" href="/html/about.html">Welcome</a>
+      </div>
+
+      <footer>
+        <a class="footer-contact-btn" href="/html/contact.html" target="_blank"
+          >Let's Work Together</a
+        >
+
+        <p class="footer-text">Made by Abdul-Malik Mohamed</p>
+
+        <div class="footer-links">
+          <a
+            class="footer-icon"
+            href="https://github.com/abdul-malik360"
+            target="_blank"
+          >
+            <i class="fab fa-github footer-tooltip">
+              <span class="footer-tooltip-text">Github</span>
+            </i>
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://codepen.io/abdul-malik360"
+            target="_blank"
+          >
+            <i class="fab fa-codepen footer-tooltip">
+              <span class="footer-tooltip-text">Codepen</span>
+            </i>
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://www.linkedin.com/in/abdul-malik-mohamed-5938bb214"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in footer-tooltip">
+              <span class="footer-tooltip-text">LinkedIn</span>
+            </i>
+          </a>
+        </div>
+      </footer>
+    </section>
+
+    <script src="/js/navbar.js"></script>
+    <script src="/js/typing.js"></script>
+  </body>
+</html>
