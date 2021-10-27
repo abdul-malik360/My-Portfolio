@@ -5,9 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Abdul-Malik</title>
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h2>about Abdul-Malik</h2>
-    <a href="/index.html">home</a>
+    <section id="about">
+      <nav>
+        <ul class="navbar-links">
+          <li>
+            <a href="/index.html" class="navbar-link">
+              <i class="fas fa-home nav-tooltip">
+                <span class="nav-tooltip-text">HOME</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/about.html" class="navbar-link">
+              <i class="fas fa-address-card nav-tooltip">
+                <span class="nav-tooltip-text">ABOUT</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/portfolio.html" class="navbar-link">
+              <i class="fas fa-briefcase nav-tooltip">
+                <span class="nav-tooltip-text">PORTFOLIO</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/testimonials.html" class="navbar-link">
+              <i class="fas fa-quote-left nav-tooltip">
+                <span class="nav-tooltip-text">TESTIMONIALS</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/contact.html" class="navbar-link">
+              <i class="fas fa-envelope nav-tooltip">
+                <span class="nav-tooltip-text">CONTACT ME</span>
+              </i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <div class="about-container">
+        <div class="about-me">
+          <h1 class="about-heading">
+            About <span class="about-heading-split">Me</span>
+          </h1>
+          <div class="bio">
+            <img class="my-pic" src="/images/Abdul-Malik.JPG" alt="" />
+
+            <div class="bio-content">
+              <p class="bio-text">
+                I'm Abdul-Malik Mohamed, a goal-driven individual who strives to
+                achieve my goals. I push through my challenges with patience and
+                I try my best to display what lies within my heart by my
+                actions. I will go above and beyond when asked to lend a hand. I
+                try to vibrate positive energy with everybody I meet, I believe
+                that the energy you give is the energy you get. On a personal
+                level, I'm an outdoors person, who is a Thalassophile and a
+                Montivagent by heart, so I love walking on mountains and ending
+                up at the sea.
+              </p>
+              <p class="bio-text">
+                I completed a networking course last year and got a taste of the
+                IT industry. While learning about how networks pinged through to
+                other networks, I wondered what makes up the information we were
+                pinging through and how that content was created, and that is
+                where my interest in programming and web development began. This
+                curiosity lead me to where I am today.
+              </p>
+              <div class="bio-details">
+                <div>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-birthday-cake"> </i>
+                    </span>
+                    3 February 2000
+                  </p>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-phone-alt"></i>
+                    </span>
+                    076 497 1338
+                  </p>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    Mitchell's Plain, Cape Town
+                  </p>
+
+                  <p>
+                    <span class="about-icon">
+                      <i class="far fa-envelope"></i>
+                    </span>
+                    abdulmalikmohamed360@gmail.com
+                  </p>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-cog"></i>
+                    </span>
+                    Aspiring Full Stack Developer
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <span class="about-icon">
+                      <i class="far fa-comments"></i>
+                    </span>
+                    English/Afrikaans
+                  </p>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    Criminal Record
+                  </p>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-id-card"></i>
+                    </span>
+                    License
+                  </p>
+                  <p>
+                    <span class="about-icon">
+                      <i class="fas fa-syringe"></i>
+                    </span>
+                    Vaccinated
+                  </p>
+                </div>
+              </div>
+              <button>Download my CV</button>
+            </div>
+          </div>
+        </div>
+        <div class="resume"></div>
+        <div class="passion-board"></div>
+        <div class="skills"></div>
+      </div>
+      <footer>
+        <a class="footer-contact-btn" href="/html/contact.html" target="_blank"
+          >Let's Work Together</a
+        >
+
+        <a class="footer-text" href="/index.html"
+          >Made by Abdul-Malik Mohamed</a
+        >
+
+        <div class="footer-links">
+          <a
+            class="footer-icon"
+            href="https://github.com/abdul-malik360"
+            target="_blank"
+          >
+            <i class="fab fa-github footer-tooltip">
+              <span class="footer-tooltip-text">Github</span>
+            </i>
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://codepen.io/abdul-malik360"
+            target="_blank"
+          >
+            <i class="fab fa-codepen footer-tooltip">
+              <span class="footer-tooltip-text">Codepen</span>
+            </i>
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://www.linkedin.com/in/abdul-malik-mohamed-5938bb214"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in footer-tooltip">
+              <span class="footer-tooltip-text">LinkedIn</span>
+            </i>
+          </a>
+        </div>
+      </footer>
+    </section>
+
+    <script src="/js/navbar.js"></script>
   </body>
 </html>
