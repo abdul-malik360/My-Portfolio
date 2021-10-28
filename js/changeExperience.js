@@ -1,5 +1,5 @@
 function changeExperience(elementID) {
-  let tabs = document.getElementsByClassName("about-content");
+  let tabs = document.getElementsByClassName("resume-content");
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].classList.remove("active");
   }

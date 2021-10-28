@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/css/about.css" />
     <link rel="stylesheet" href="/css/footer.css" />
 
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/ab6051d3ab.js"
@@ -184,34 +187,27 @@
         </div>
         <div class="resume">
           <h3 class="sub-heading">My Resume</h3>
-          <div class="resume-btns">
-            <button
-              class="resume-button educations"
-              onclick="changeExperience('edu')"
-            >
-              <i class="fas fa-book-open resume-tooltip"
-                ><span class="resume-tooltip-text">EDUCATION</span>
+
+          <!-- delete and fix -->
+          <div class="resbtn">
+            <button class="linebtn ed" onclick="changeExperience('edu')">
+              <i class="fas fa-book-open tooltipres"
+                ><span class="tooltiptextres">EDUCATION</span>
               </i>
             </button>
-            <button
-              class="resume-button work"
-              onclick="changeExperience('work')"
-            >
-              <i class="fas fa-briefcase resume-tooltip"
-                ><span class="resume-tooltip-text">WORK</span>
+            <button class="linebtn wrk" onclick="changeExperience('work')">
+              <i class="fas fa-briefcase tooltipres"
+                ><span class="tooltiptextres">WORK</span>
               </i>
             </button>
-            <button
-              class="resume-button developement"
-              onclick="changeExperience('dev')"
-            >
-              <i class="fas fa-award resume-tooltip"
-                ><span class="resume-tooltip-text">DEVELOPMENT</span>
+            <button class="linebtn devl" onclick="changeExperience('dev')">
+              <i class="fas fa-award tooltipres"
+                ><span class="tooltiptextres">DEVELOPMENT</span>
               </i>
             </button>
           </div>
 
-          <div id="edu" class="about-content active education">
+          <div id="edu" class="resume-content active education">
             <div class="owl-carousel">
               <div class="input item1" data-aos="zoom-in">
                 <div class="datentitle">
@@ -272,7 +268,7 @@
             </div>
           </div>
 
-          <div iv id="work" class="about-content workexp">
+          <div iv id="work" class="resume-content workexp">
             <div class="owl-carousel">
               <div class="input item5" data-aos="zoom-in">
                 <div class="datentitle">
@@ -379,7 +375,7 @@
               </div>
             </div>
           </div>
-          <div id="dev" class="about-content personaldevelopment">
+          <div id="dev" class="resume-content personaldevelopment">
             <div class="owl-carousel">
               <div class="input item12" data-aos="zoom-in">
                 <div class="datentitle">
@@ -427,6 +423,199 @@
                   Masjidul-Wadood, AMR Youth, MP Youth, A 2 Z Helping Hands
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fix -->
+        <div class="skills">
+          <h3 class="sub-heading">My Passion</h3>
+          <div class="softskills">
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <a
+                href="https://www.instagram.com/abdul_malik_mohamed/"
+                target="_blank"
+                ><i class="icon fas fa-hiking"></i
+              ></a>
+              Hiking
+            </div>
+
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-football-ball"></i>Rugby
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-running"></i>Running
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-dumbbell"></i>Weight Lifting
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-gamepad"></i>Gaming
+            </div>
+          </div>
+
+          <h3 class="sub-heading">My Skills</h3>
+
+          <div class="softskills">
+            <h4>Soft:</h4>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-search"></i>Attention to detail
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-tasks"></i>Multitasking
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon far fa-lightbulb"></i>Creativity
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-tachometer-alt"></i>Working under pressure
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon far fa-comments"></i>Communication skills
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon far fa-edit"></i>Taking orders
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-clipboard-check"></i>Completing tasks
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-assistive-listening-systems"></i>following
+              instructions
+            </div>
+          </div>
+          <div class="skillsicons">
+            <h4>Technical:</h4>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fab fa-html5"></i>HTML
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fab fa-css3-alt"></i>CSS
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fab fa-js-square"></i>JAVASCRIPT
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fab fa-python"></i>PYTHON
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <img class="skill_pic" src="/images/Flask Logo.png" alt="" />
+              FLASK
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon devicon-mysql-plain"></i>MySQL
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <img class="skill_pic" src="/images/SQL lite Logo.png" alt="" />
+              SQLite
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              class="skillicon"
+            >
+              <i class="icon fas fa-camera"></i> PHOTOGRAPHY
             </div>
           </div>
         </div>
@@ -481,7 +670,7 @@
 
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/scripts/aos.js"></script>
+    <script src="/js/aos.js"></script>
 
     <!-- resume -->
     <script src="/js/changeExperience.js"></script>

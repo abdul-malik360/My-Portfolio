@@ -111,16 +111,12 @@
 .resume {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   background: white;
 
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
   padding: 5px;
   margin: 50px;
 }
@@ -129,15 +125,34 @@
   font-size: 50px;
   color: #1d3557;
 }
-
-.resume-btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 1.25em;
-  position: sticky;
+/* delete and fix */
+h4 {
+  align-self: flex-start;
+  font-size: 3em;
+  color: #a8dadc;
 }
-.resume-button {
+.resume-content {
+  display: none;
+}
+
+.resume-content.active {
+  display: flex;
+  justify-content: center;
+
+  background-attachment: fixed;
+  transition: 0.6s;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.linebtn {
   font-size: 0.938em;
   margin-top: 2%;
   height: 5vh;
@@ -146,35 +161,26 @@
   color: #1d3557;
   background-color: white;
 }
-.resume-button:hover {
-  color: #a8dadc;
-  cursor: pointer;
-  transition: 0.6s;
-}
-.education {
+.ed {
   border-right: 2px solid #1c6ea4;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   border-left: 2px solid white;
 }
-.work {
+.wrk {
   border: white;
 }
-.developement {
+.devl {
   border-left: 2px solid #1c6ea4;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
 }
 
-.resume-tooltip {
+.tooltipres {
   position: relative;
 }
-.resume-tooltip:hover .resume-tooltip-text {
-  visibility: visible;
-  transition: 0.3s;
-}
-.resume-tooltip-text {
+.tooltiptextres {
   visibility: hidden;
   width: 150px;
   color: #a8dadc;
@@ -191,6 +197,30 @@
   left: 105%;
   margin-left: -80px;
 }
+.tooltipres:hover .tooltiptextres {
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.linebtn:hover {
+  color: #a8dadc;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+/* .linebtn .active {
+  color: white;
+  background: crimson;
+} */
+
+.resbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.25em;
+  position: sticky;
+}
+
 .input {
   background-color: #457b9d;
   color: #a8dadc;
@@ -203,6 +233,7 @@
   height: 50vh;
   cursor: grab;
 }
+
 h6 {
   font-size: 16px;
   color: #a8dadc;
@@ -238,4 +269,92 @@ h5 {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Skills section */
+/* fix */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  background: white;
+
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding: 5px;
+  margin: 50px;
+}
+
+.skillsicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  padding-top: 2%;
+  flex-wrap: wrap;
+}
+.softskills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  padding-top: 2%;
+  flex-wrap: wrap;
+}
+
+.skillicon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  padding: 30px;
+  color: #1d3557;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.25em;
+  transition: 0.6s;
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.fa-html5:hover {
+  color: #e34c26;
+  transition: 0.6s;
+}
+.fa-css3-alt:hover {
+  color: #2965f1;
+  transition: 0.6s;
+}
+.fa-js-square:hover {
+  color: #f0db4f;
+  transition: 0.6s;
+}
+.fa-python:hover {
+  color: #4b8bbe;
+  transition: 0.6s;
+}
+.fa-instagram:hover {
+  color: #bc2a8d;
+  transition: 0.6s;
+}
+.devicon-mysql-plain:hover {
+  color: #0f536c;
+}
+.iconword {
+  color: #1d3557;
 }
