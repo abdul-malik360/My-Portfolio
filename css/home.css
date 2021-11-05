@@ -22,7 +22,8 @@
 }
 
 #home {
-  background-image: url("/images/cliff.jpg"), radial-gradient(#a8dadc, #1d3557);
+  background-image: url("/images/home/cliff.jpg"),
+    radial-gradient(#a8dadc, #1d3557);
   background-blend-mode: soft-light;
   background-size: cover;
   width: 100%;

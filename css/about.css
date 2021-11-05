@@ -376,6 +376,30 @@
 
 /* icon hovers */
 
+.icon-tooltip {
+  position: relative;
+}
+
+.icon-tooltip-text {
+  visibility: hidden;
+  color: #a8dadc;
+
+  background-color: #1d3557;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 16px;
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 105%;
+  margin-left: -80px;
+}
+.icon-tooltip:hover .icon-tooltip-text {
+  visibility: visible;
+  transition: 0.3s;
+}
 .fa-html5:hover {
   color: #e34c26;
   transition: 0.6s;
@@ -392,10 +416,30 @@
   color: #4b8bbe;
   transition: 0.6s;
 }
-.fa-instagram:hover {
+.fa-camera:hover {
   color: #bc2a8d;
   transition: 0.6s;
 }
 .devicon-mysql-plain:hover {
   color: #0f536c;
+}
+
+.devicon-postgresql-plain:hover {
+  color: #336791;
+}
+
+.devicon-vuejs-plain:hover {
+  color: #60be86;
+}
+
+.devicon-flask-original:hover {
+  color: #010101;
+}
+
+.devicon-mongodb-plain:hover {
+  color: #4faa41;
+}
+
+.devicon-nodejs-plain:hover {
+  color: #83cd29;
 }

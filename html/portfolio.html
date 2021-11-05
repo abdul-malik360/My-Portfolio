@@ -5,9 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdul-Malik's Projects</title>
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- dev icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
   </head>
   <body>
-    <h1>Projects page under construction</h1>
-    <a href="/index.html">home</a>
+    <section id="portfolio">
+      <!-- navbar -->
+      <nav>
+        <ul class="navbar-links">
+          <li>
+            <a href="/index.html" class="navbar-link">
+              <i class="fas fa-home nav-tooltip">
+                <span class="nav-tooltip-text">HOME</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/about.html" class="navbar-link">
+              <i class="fas fa-address-card nav-tooltip">
+                <span class="nav-tooltip-text">ABOUT</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/portfolio.html" class="navbar-link">
+              <i class="fas fa-briefcase nav-tooltip">
+                <span class="nav-tooltip-text">PORTFOLIO</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/testimonials.html" class="navbar-link">
+              <i class="fas fa-quote-left nav-tooltip">
+                <span class="nav-tooltip-text">TESTIMONIALS</span>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="/html/contact.html" class="navbar-link">
+              <i class="fas fa-envelope nav-tooltip">
+                <span class="nav-tooltip-text">CONTACT ME</span>
+              </i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="portfolio-container">
+        <div class="projects">
+          <h1 class="portfolio-heading">
+            My <span class="portfolio-heading-split">Projects</span>
+          </h1>
+          <div class="portfolio-buttons">
+            <button class="portfolio-button" onclick="filterCards('All')">
+              <i class="fas fa-book-open portfolio-tooltip"
+                ><span class="portfolio-tooltip-text">All</span>
+              </i>
+            </button>
+            <button class="portfolio-button" onclick="filterCards('HTML/CSS')">
+              <i class="fab fa-html5 portfolio-tooltip"
+                ><span class="portfolio-tooltip-text">HTML</span></i
+              >/<i class="fab fa-css3-alt portfolio-tooltip"
+                ><span class="portfolio-tooltip-text">CSS</span></i
+              >
+            </button>
+            <button class="portfolio-button" onclick="filterCards('Python')">
+              <i class="fab fa-python portfolio-tooltip">
+                <span class="portfolio-tooltip-text">Python</span>
+              </i>
+            </button>
+            <button
+              class="portfolio-button"
+              onclick="filterCards('JavaScript')"
+            >
+              <i class="fab fa-js-square portfolio-tooltip">
+                <span class="portfolio-tooltip-text">JavaScript</span>
+              </i>
+            </button>
+          </div>
+          <div class="project-container"></div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <a class="footer-contact-btn" href="/html/contact.html" target="_blank"
+          >Let's Work Together</a
+        >
+
+        <a class="footer-text" href="/index.html"
+          ><i class="far fa-copyright"></i> Made by Abdul-Malik Mohamed</a
+        >
+
+        <div class="footer-links">
+          <a
+            class="footer-icon"
+            href="https://github.com/abdul-malik360"
+            target="_blank"
+          >
+            <i class="fab fa-github footer-tooltip">
+              <span class="footer-tooltip-text">Github</span>
+            </i>
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://codepen.io/abdul-malik360"
+            target="_blank"
+          >
+            <i class="fab fa-codepen footer-tooltip">
+              <span class="footer-tooltip-text">Codepen</span>
+            </i>
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://www.linkedin.com/in/abdul-malik-mohamed-5938bb214"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in footer-tooltip">
+              <span class="footer-tooltip-text">LinkedIn</span>
+            </i>
+          </a>
+        </div>
+      </footer>
+    </section>
+
+    <!-- navbar -->
+    <script src="/js/navbar.js"></script>
+
+    <!-- filter -->
+    <script src="/js/projects.js"></script>
+
+    <!-- modal -->
   </body>
 </html>
