@@ -7,6 +7,7 @@ let projects = [
     description: "lorem ipsum JS",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "timeline-modal",
   },
   {
     imgURL: "../images/projects/contactform.PNG",
@@ -16,6 +17,7 @@ let projects = [
     description: "lorem ipsum hello world",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "contact-modal",
   },
   {
     imgURL: "../images/projects/calculator.png",
@@ -25,8 +27,8 @@ let projects = [
     description: "lorem ipsum Python",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "calculator-modal",
   },
-
   {
     imgURL: "../images/projects/bmicalculator.PNG",
     imgALT: "This is cool",
@@ -35,6 +37,7 @@ let projects = [
     description: "I made this",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "bmi-modal",
   },
   {
     imgURL: "../images/projects/sneakersite.PNG",
@@ -44,6 +47,7 @@ let projects = [
     description: "lorem ipsum",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "sneaker-modal",
   },
   {
     imgURL: "../images/projects/weatherapp.PNG",
@@ -53,6 +57,7 @@ let projects = [
     description: "This is dynamic",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "weather-modal",
   },
   {
     imgURL: "../images/projects/testimonials.PNG",
@@ -62,6 +67,7 @@ let projects = [
     description: "I just created this",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "testimonial-modal",
   },
   {
     imgURL: "../images/projects/adding.PNG",
@@ -71,8 +77,8 @@ let projects = [
     description: "Pokedex",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "adding-modal",
   },
-
   {
     imgURL: "../images/projects/projectscard.PNG",
     imgALT: "My Project 7",
@@ -81,8 +87,8 @@ let projects = [
     description: "Pokedex",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "project-modal",
   },
-
   {
     imgURL: "../images/projects/temperatureconverter.PNG",
     imgALT: "My Project 7",
@@ -91,8 +97,8 @@ let projects = [
     description: "Pokedex",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "converter-modal",
   },
-
   {
     imgURL: "../images/projects/patientapp.PNG",
     imgALT: "My Project 7",
@@ -101,8 +107,8 @@ let projects = [
     description: "Pokedex",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "patient-modal",
   },
-
   {
     imgURL: "../images/projects/pokedex.png",
     imgALT: "My Project 7",
@@ -111,8 +117,8 @@ let projects = [
     description: "Pokedex",
     githubURL: "#",
     liveProjectURL: "#",
+    id: "pokedex-modal",
   },
-
   {
     imgURL: "../images/projects/errorhandlingapp.PNG",
     imgALT: "My Project 7",
@@ -121,40 +127,60 @@ let projects = [
     description: "Pokedex",
     githubURL: "#",
     liveProjectURL: "#",
-  },
-
-  {
-    imgURL: "../images/projects/",
-    imgALT: "My Project 7",
-    title: "My Project Title 7",
-    techStack: "JavaScript",
-    description: "Pokedex",
-    githubURL: "#",
-    liveProjectURL: "#",
+    id: "error-modal",
   },
 ];
 
-function createCard(card) {
-  let createdCard = `<div class="project-card" techStack=${card.techStack} >
+function projectPicture(image) {
+  let projectPicture = `<div class="project-card" techStack=${image.techStack} >
         <div class="img-container">
-        <img src="${card.imgURL}" alt="${card.imgALT}">
+        <img onclick="toggleModal('${image.id}')" src="${image.imgURL}" alt="${image.imgALT}">
         </div>
-        
-        
       </div>
+      
     `;
-  return createdCard;
+  return projectPicture;
 }
 
-function renderCards() {
+function showPictures() {
   let projectContainer = document.querySelector(".project-container");
-  for (project of projects) {
-    let card = createCard(project);
-    projectContainer.innerHTML += card;
+  for (picture of projects) {
+    let image = projectPicture(picture);
+    projectContainer.innerHTML += image;
   }
 }
 
-renderCards();
+showPictures();
+
+function createModal(modal) {
+  let createdModal = `
+  <div id="${modal.id}" class="modal">
+    <div class="back-drop">
+
+      <img class="pic" src="${modal.imgURL}" />
+      <h4>${modal.title}</h4>
+      <h6>${modal.techStack}</h6>
+      <button onclick="toggleModal('${modal.id}')">close</button>
+
+    </div>
+</div>
+  `;
+  return createdModal;
+}
+
+function showModal() {
+  let modalContainer = document.querySelector(".modal-container");
+  for (modal of projects) {
+    let card = createModal(modal);
+    modalContainer.innerHTML += card;
+  }
+}
+
+showModal();
+
+function toggleModal(modalID) {
+  document.getElementById(modalID).classList.toggle("active");
+}
 
 function filterCards(category) {
   let cards = document.getElementsByClassName("project-card");
