@@ -143,16 +143,38 @@ let projects = [
     id: "error-handling",
   },
 
-  // {
-  //   imgURL: "",
-  //   imgALT: "",
-  //   title: "",
-  //   techStack: "",
-  //   description: "",
-  //   githubURL: "",
-  //   liveProjectURL: "",
-  //   id: "",
-  // },
+  {
+    imgURL: "../images/projects/Ethereal.png",
+    imgALT: "Nishaat Williams Portfolio",
+    title: "Ethereal Fungus",
+    techStack: "HTML/CSS",
+    description: "A portfolio of my friend's work",
+    githubURL: "https://github.com/abdul-malik360/Portfolio-Roopen",
+    liveProjectURL: "https://etherealfungus.netlify.app/",
+    id: "Nishaat-portfolio",
+  },
+
+  {
+    imgURL: "../images/projects/QAT.png",
+    imgALT: "QAT Motors",
+    title: "QAT Motors Website",
+    techStack: "JavaScript",
+    description: "A website for Qat Motors",
+    githubURL: "https://github.com/abdul-malik360/Final_Project-Frontend",
+    liveProjectURL: "https://qat-motors.netlify.app/",
+    id: "Qat-Motors",
+  },
+
+  {
+    imgURL: "../images/projects/myPos.png",
+    imgALT: "MyPOS",
+    title: "MyPOS",
+    techStack: "JavaScript",
+    description: "A website for My Point of Sale ",
+    githubURL: "https://github.com/abdul-malik360/Javascript_EOMP",
+    liveProjectURL: "https://optimistic-benz-002fcf.netlify.app/",
+    id: "MyPOS",
+  },
 ];
 
 function projectPicture(image) {
