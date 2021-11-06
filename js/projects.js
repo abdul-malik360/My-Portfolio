@@ -180,11 +180,8 @@ showPictures();
 
 function createModal(modal) {
   let createdModal = `
-  <div id="${modal.id}" class="modal">
-    <div class="back-drop">
-
-      <button class="modal-btn" onclick="toggleModal('${modal.id}')">X</button>
-
+  <div id="${modal.id}" class="modal" onclick="toggleModal('${modal.id}')">
+    <div class="back-drop"> 
       <img class="modal-picture" src="${modal.imgURL}" />
       <div class="modal-content"> 
       
