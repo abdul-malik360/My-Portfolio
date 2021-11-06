@@ -132,10 +132,12 @@ let projects = [
 ];
 
 function projectPicture(image) {
-  let projectPicture = `<div class="project-card" techStack=${image.techStack} >
+  let projectPicture = `<div class="project-card" techStack=${image.techStack} onclick="toggleModal('${image.id}')" >
         <div class="img-container">
-        <img onclick="toggleModal('${image.id}')" src="${image.imgURL}" alt="${image.imgALT}">
+        <img src="${image.imgURL}" alt="${image.imgALT}">
+        <div><i class="far fa-eye"></i></div>
         </div>
+        
       </div>
       
     `;
@@ -157,7 +159,7 @@ function createModal(modal) {
   <div id="${modal.id}" class="modal">
     <div class="back-drop">
 
-      <img class="pic" src="${modal.imgURL}" />
+      <img class="modal-picture" src="${modal.imgURL}" />
       <h4>${modal.title}</h4>
       <h6>${modal.techStack}</h6>
       <button onclick="toggleModal('${modal.id}')">close</button>
