@@ -272,3 +272,9 @@
   background: #457b9d;
   width: 350px;
 }
+
+@media screen and (max-width: 600px) {
+  .portfolio-heading {
+    font-size: 50px;
+  }
+}
