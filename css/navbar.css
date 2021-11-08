@@ -99,7 +99,10 @@
 
 @media screen and (max-width: 600px) {
   .navbar-button {
-    top: 50px;
+    right: 20px;
+  }
+
+  .navbar-links.active {
     right: 20px;
   }
 }
