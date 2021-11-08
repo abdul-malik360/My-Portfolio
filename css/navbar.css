@@ -102,6 +102,10 @@
     right: 20px;
   }
 
+  .navbar-links {
+    right: 20px;
+  }
+
   .navbar-links.active {
     right: 20px;
   }
