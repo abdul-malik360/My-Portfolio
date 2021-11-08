@@ -160,3 +160,13 @@ footer {
   visibility: visible;
   transition: 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-contact-btn {
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
