@@ -305,11 +305,11 @@
 .passion-icons-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 5%;
   padding-top: 2%;
-  flex-wrap: wrap;
 }
 
 .passion-icon {
@@ -478,9 +478,14 @@
   }
 
   .resume-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-direction: row; */
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin: 50px;
+    /* height: 100%; */
   }
 
   .resume-mini-container {
