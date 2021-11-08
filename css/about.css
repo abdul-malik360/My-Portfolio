@@ -529,6 +529,10 @@
     flex-direction: column;
   }
 
+  .passion-board {
+    margin: 20px;
+  }
+
   .skills {
     margin: 20px;
   }
