@@ -458,3 +458,16 @@
 .devicon-nodejs-plain:hover {
   color: #83cd29;
 }
+
+@media screen and (max-width: 800px) {
+  .about-content {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .my-bio-container {
+    width: 100%;
+  }
+}
