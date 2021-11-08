@@ -477,13 +477,10 @@
   }
 
   .my-details-container {
-    /* display: none; */
   }
 
   .my-bio-container {
-    /* width: 100%; */
-
-    display: none;
+    width: 100%;
   }
 
   .resume {
