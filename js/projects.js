@@ -209,7 +209,7 @@ function createModal(modal) {
       
         <h4 class="modal-title">${modal.title}</h4>
         <h6 class="tech-stack">${modal.techStack}</h6>
-        <p>${modal.description}</p>
+        <p class="modal-text">${modal.description}</p>
         <div class="modal-link-buttons">
           <a href="${modal.githubURL}" target="_blank" class="modal-link-btn">Github</a>
           <a href="${modal.liveProjectURL}" target="_blank" class="modal-link-btn">Live</a>
