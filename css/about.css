@@ -529,6 +529,10 @@
     flex-direction: column;
   }
 
+  .skills {
+    margin: 20px;
+  }
+
   .skill-icon {
     font-size: 10px;
   }
