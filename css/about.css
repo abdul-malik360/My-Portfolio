@@ -503,10 +503,27 @@
     margin: 50px;
   }
 
+  .resume-content.active {
+    padding: 0;
+  }
+
   .resume-mini-container {
+    background-color: #a8dadc;
+    color: #457b9d;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 5px;
+  }
+
+  .resume-mini-containerss {
+    padding: 30px;
+
+    border-radius: 10px;
+    font-size: 1.25em;
+    transition: 0.6s;
+    height: 50vh;
+    cursor: grab;
   }
   .my-details {
     display: flex;
