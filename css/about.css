@@ -460,6 +460,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
   .about-content {
     display: flex;
     /* flex-direction: row; */
@@ -500,6 +507,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .my-details {
+    display: flex;
+    flex-direction: column;
   }
 
   .skill-icon {
