@@ -73,6 +73,7 @@
 .double {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .portfolio-button {

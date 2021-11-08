@@ -470,4 +470,30 @@
   .my-bio-container {
     width: 100%;
   }
+
+  .resume {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .resume-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .resume-mini-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skill-icon {
+    font-size: 10px;
+  }
+
+  .passion-icon {
+    font-size: 10px;
+  }
 }
