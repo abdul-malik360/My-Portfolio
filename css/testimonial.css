@@ -113,4 +113,8 @@ body {
   .testimonial-heading {
     font-size: 50px;
   }
+
+  .testimonial-message {
+    width: 100%;
+  }
 }
