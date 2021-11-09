@@ -277,4 +277,8 @@
   .portfolio-heading {
     font-size: 50px;
   }
+
+  .project-container {
+    margin: 5px;
+  }
 }
