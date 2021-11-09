@@ -80,6 +80,7 @@
 .my-details {
   display: flex;
   flex-direction: row;
+  margin: 20px;
 }
 .details {
   color: #1d3557;
