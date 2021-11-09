@@ -220,6 +220,7 @@ h3 {
   .my-contact-details {
     display: flex;
     flex-direction: column;
+    margin: 10px;
   }
   .contact-me-container {
     display: flex;
