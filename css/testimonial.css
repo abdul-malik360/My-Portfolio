@@ -98,6 +98,8 @@ body {
 @media screen and (max-width: 600px) {
   .testimonial-container {
     margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .testimonial-box {
