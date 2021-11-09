@@ -96,10 +96,8 @@ body {
 /* ************ */
 
 @media screen and (max-width: 600px) {
-  .container {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+  .testimonial-container {
+    margin: 20px;
   }
 
   .testimonial-box {
