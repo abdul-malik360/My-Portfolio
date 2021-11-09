@@ -105,6 +105,7 @@ body {
   .testimonial-box {
     display: flex;
     flex-direction: column;
+    height: 60vh;
   }
 
   .testimonial-heading {
