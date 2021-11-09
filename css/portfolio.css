@@ -114,7 +114,6 @@
   position: absolute;
   z-index: 1;
   top: -25px;
-  /* left: 100%; */
   margin-left: -50px;
 }
 .portfolio-tooltip:hover .portfolio-tooltip-text {

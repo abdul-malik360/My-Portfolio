@@ -1,3 +1,5 @@
+// calling the owl carousel function for testimonials page
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 1,

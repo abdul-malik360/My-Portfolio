@@ -59,7 +59,6 @@
 .statement-typed {
   color: #a8dadc;
   font-weight: 700;
-  /* font-size: 20px; */
   text-shadow: 0px 0px 3px #1d3557;
 }
 
@@ -118,9 +117,6 @@ footer {
 .footer-text {
   color: #a8dadc;
   text-decoration: none;
-}
-
-.footer-links {
 }
 
 .footer-icon {

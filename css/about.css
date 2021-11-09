@@ -30,7 +30,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 /* about me section */
 .about-me {
@@ -105,6 +104,7 @@
   color: #1d3557;
   font-size: 20px;
   margin: 20px;
+  text-align: justify;
 }
 
 .download-btn {
@@ -201,11 +201,9 @@
   padding: 20px;
 
   border-radius: 10px;
-  /* height: 100%; */
   width: 100%;
   overflow-y: auto;
 
-  /* overflow: hidden; */
   height: 60vh;
   overflow: scroll;
 }
@@ -218,14 +216,10 @@
 }
 
 .resume-container {
-  /* display: flex; */
-  /* flex-direction: row; */
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   margin: 50px;
-  /* height: 100%; */
 }
 .resume-mini-container {
   background-color: #457b9d;
@@ -257,17 +251,8 @@
   text-align: center;
 }
 
-/* .resbtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 1.25em;
-  position: sticky;
-} */
-
 .resume-title-span {
   display: flex;
-  /* flex-direction: column-reverse; */
   font-size: 16px;
   font-weight: 100;
   color: #1d3557;
@@ -281,7 +266,6 @@
   text-shadow: 0px 0px 3px #1d3557;
 }
 .resume-description {
-  /* padding: 20px; */
   margin-top: 10px;
   font-style: italic;
   color: #f1faee;
@@ -374,16 +358,6 @@
   color: #a8dadc;
 }
 
-/* .skillsicons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  padding-top: 2%;
-  flex-wrap: wrap;
-} */
-
 .skill-icon {
   display: flex;
   flex-direction: column;
@@ -474,7 +448,6 @@
 
   .about-content {
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -486,9 +459,6 @@
   .my-pic {
     height: 200px;
     width: 250px;
-  }
-
-  .my-details-container {
   }
 
   .my-bio-container {
@@ -510,9 +480,6 @@
 
   .resume-content.active {
     padding: 0;
-  }
-
-  .resume-mini-container {
   }
 
   .resume-mini-containerss {

@@ -22,8 +22,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  align-self: center;
 }
 
 body {
@@ -113,12 +111,10 @@ h3 {
   margin-top: 10px;
 }
 
-.formed {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  /* margin: 30px; */
 
   background: #a8dadc;
   width: 50%;
@@ -145,13 +141,6 @@ h3 {
 .your-info {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
-}
-.dsply {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100%;
 }
 
 h3 {
@@ -236,7 +225,7 @@ h3 {
     width: 100%;
   }
 
-  .formed {
+  form {
     width: 100%;
   }
 }
