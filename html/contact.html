@@ -49,124 +49,108 @@
               </i>
             </a>
           </li>
+          <li>
+            <a href="/html/contact.html" class="navbar-link nav-active">
+              <i class="fas fa-envelope nav-tooltip">
+                <span class="nav-tooltip-text">CONTACT ME</span>
+              </i>
+            </a>
+          </li>
         </ul>
         <button class="navbar-button" onclick="toggleNavbar()">
           <i class="fas fa-bars"></i>
         </button>
       </nav>
       <div class="contact-container">
-        <div>
-          <h1>Let's <span class="headcolor">Talk</span></h1>
-          <div class="contactdetails">
-            <div class="cntctme">
-              <p class="contacticons">
-                <i class="fas fa-phone-alt cnticn"></i> 076 497 1338
-              </p>
-              <p class="contacticons">
-                <i class="fas fa-envelope cnticn"></i>
-                abdulmalikmohamed360@gmail.com
-              </p>
-              <p class="contacticons">
-                <i class="fas fa-map-marker-alt cnticn"></i> Cape Town, South
-                Africa
-              </p>
+        <h1 class="contact-heading">
+          Let's <span class="contact-heading-split">Talk</span>
+        </h1>
+
+        <div class="my-contact-details">
+          <p class="my-details">
+            <i class="fas fa-phone-alt contact-icon"></i> 076 497 1338
+          </p>
+          <p class="my-details">
+            <i class="fas fa-envelope contact-icon"></i>
+            abdulmalikmohamed360@gmail.com
+          </p>
+          <p class="my-details">
+            <i class="fas fa-map-marker-alt contact-icon"></i> Cape Town, South
+            Africa
+          </p>
+        </div>
+
+        <div class="contact-me-container">
+          <div class="contact-me-message">
+            <h3>Send Me An Email</h3>
+            <p>
+              Feel free to get in touch with me. I am always open to discussing
+              new projects or creative ideas.
+            </p>
+            <h3>Follow Me</h3>
+            <div class="links">
+              <a href="https://github.com/abdul-malik360" target="_blank"
+                ><i class="fab fa-github link-button"></i
+              ></a>
+              <a href="https://codepen.io/abdul-malik360" target="_blank"
+                ><i class="fab fa-codepen link-button"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/abdul_malik_mohamed/"
+                target="_blank"
+                ><i class="fab fa-instagram link-button"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abdul-malik-mohamed-5938bb214"
+                target="_blank"
+                ><i class="fab fa-linkedin-in link-button"></i
+              ></a>
             </div>
-
-            <form
-              id="contact-form"
-              action="https://formspree.io/f/mjvjywbw"
-              method="POST"
-              target="_blank"
-            >
-              <div class="dsply">
-                <div class="txt">
-                  <h3>Send Me An Email</h3>
-                  <p>
-                    Feel free to get in touch with me. I am always open to
-                    discussing new projects or creative ideas.
-                  </p>
-                  <h3>Follow Me</h3>
-                  <div class="links">
-                    <a href="https://github.com/abdul-malik360" target="_blank"
-                      ><i class="fab fa-github lbtn"></i
-                    ></a>
-                    <a href="https://codepen.io/abdul-malik360" target="_blank"
-                      ><i class="fab fa-codepen lbtn"></i
-                    ></a>
-                    <a
-                      href="https://www.instagram.com/abdul_malik_mohamed/"
-                      target="_blank"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a
-                      href="https://www.linkedin.com/in/abdul-malik-mohamed-5938bb214"
-                      target="_blank"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
-                </div>
-
-                <div class="formstyle">
-                  <div class="yourinfo">
-                    <div class="form-group">
-                      <label class="form-labels" for="name">Your Name</label>
-                      <input
-                        class="form-input"
-                        type="text"
-                        name="name"
-                        id="name"
-                        required
-                        placeholder="Full Name"
-                      />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="form-labels" for="email">Your Email</label>
-                      <input
-                        class="form-input"
-                        type="email"
-                        name="email"
-                        id="email"
-                        required
-                        placeholder="example@gmail.com"
-                      />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="form-labels" for="contact"
-                        >Your Number</label
-                      >
-                      <input
-                        class="form-input"
-                        type="tel"
-                        name="contact"
-                        id="contact"
-                        required
-                        placeholder="072 123 4567"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="form-labels" for="message"
-                      >Your Message</label
-                    >
-                    <input
-                      class="form-input msg"
-                      type="text"
-                      name="message"
-                      id="message"
-                      required
-                      placeholder="Type your message here"
-                    />
-                  </div>
-                  <button class="btn" type="submit">Send</button>
-                </div>
-              </div>
-            </form>
           </div>
+          <form
+            class="formed"
+            action="https://formspree.io/f/mjvjywbw"
+            method="POST"
+            target="_blank"
+          >
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Full Name"
+            />
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="example@gmail.com"
+            />
+            <input
+              class="form-input"
+              type="tel"
+              name="contact"
+              id="cell"
+              required
+              placeholder="072 123 4567"
+            />
+
+            <input
+              class="form-input"
+              type="text"
+              name="message"
+              id="message"
+              required
+              placeholder="Type your message here"
+            />
+            <button class="send-button" type="submit">Send</button>
+          </form>
         </div>
       </div>
+
       <!-- footer -->
       <footer>
         <a class="footer-contact-btn" href="/html/contact.html" target="_blank"

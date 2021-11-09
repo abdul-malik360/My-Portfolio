@@ -1,3 +1,17 @@
+#contact {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +29,7 @@
 body {
   background-color: #457b9d;
 }
-.section {
+.contact-container {
   background: white;
 
   backdrop-filter: blur(1.5px);
@@ -27,16 +41,27 @@ body {
   height: 100%;
 }
 
-h1 {
+.contact-heading {
   font-size: 80px;
   color: #1d3557;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.contact-heading-split {
+  color: #a8dadc;
+  text-shadow: 0 8px 32px 0 #1d3557;
+}
+
+.my-contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #1d3557;
+  font-size: 20px;
   margin: 30px;
 }
 
-.headcolor {
-  color: #a8dadc;
-}
-.contacticons {
+.my-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,14 +75,60 @@ h1 {
   margin: 5px;
   color: #a8dadc;
 }
-.cntctme {
+
+.contact-icon {
+  color: #1d3557;
+}
+
+.contact-me-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  color: #1d3557;
-  font-size: 20px;
-  margin: 30px;
+  background: #457b9d;
+
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 70px;
+  height: 100%;
 }
+
+.contact-me-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #a8dadc;
+  width: 40%;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  text-shadow: 3px 3px 3px #1d3557;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.formed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* margin: 30px; */
+
+  background: #a8dadc;
+  width: 50%;
+
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 #contact-form {
   background: #457b9d;
 
@@ -70,30 +141,11 @@ h1 {
   margin-bottom: 70px;
   height: 100%;
 }
-.cnticn {
-  color: #1d3557;
-}
-.form-labels {
-  display: none;
-}
-.formstyle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  margin: 30px;
-
-  background: #a8dadc;
-  width: 50%;
-
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-.yourinfo {
+.your-info {
   display: flex;
   flex-direction: row;
+  /* justify-content: center; */
 }
 .dsply {
   display: flex;
@@ -102,33 +154,11 @@ h1 {
   height: 100%;
 }
 
-.contactdetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 h3 {
   font-size: 20px;
   text-shadow: 3px 3px 3px #1d3557;
   margin-bottom: 10px;
   margin-top: 10px;
-}
-.txt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  font-size: 16px;
-  color: #a8dadc;
-  width: 40%;
-  margin: 10px;
-}
-
-.msg {
-  width: 96%;
-  height: 10vh;
-  padding: 20px;
 }
 
 .form-input {
@@ -138,7 +168,7 @@ h3 {
   background-color: #f1faee;
 }
 
-.btn {
+.send-button {
   color: #a8dadc;
   border: 2px solid #a8dadc;
   background-color: #f1faee;
@@ -151,16 +181,15 @@ h3 {
   justify-content: center;
   align-self: center;
 
-  transition: 0.6s;
+  transition: 0.3s;
 
   font-size: 15px;
 }
 
-.btn:hover {
+.send-button:hover {
   color: #1d3557;
   border: 2px solid #1d3557;
-
-  transition: 0.6s;
+  cursor: pointer;
 }
 
 .links {
@@ -168,16 +197,42 @@ h3 {
   flex-direction: row;
 }
 
-.fab {
+.link-button {
   color: #a8dadc;
   font-size: 25px;
   padding: 10px;
   border-radius: 50%;
-  transition: 0.6s;
+  transition: 0.3s;
 }
-.fab:hover {
+.link-button:hover {
   color: #1d3557;
 
   border-radius: 50%;
-  transition: 0.6s;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-heading {
+    font-size: 50px;
+  }
+  .my-contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-me-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .your-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-message {
+    width: 100%;
+  }
+
+  .formed {
+    width: 100%;
+  }
 }

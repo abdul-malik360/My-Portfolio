@@ -46,6 +46,13 @@
   border-radius: 5px;
 }
 
+.nav-active {
+  color: #a8dadc;
+  background-color: #1d3557;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 .nav-tooltip {
   position: relative;
 }
