@@ -500,6 +500,10 @@
     height: 50vh;
     cursor: grab;
   }
+
+  .my-details-container {
+    width: 100%;
+  }
   .my-details {
     display: flex;
     flex-direction: column;
