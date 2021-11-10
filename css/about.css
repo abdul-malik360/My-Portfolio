@@ -503,9 +503,12 @@
   .my-details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0;
     padding: 0;
+  }
+
+  .details {
+    text-align: center;
   }
 
   .passion-board {
