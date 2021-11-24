@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talk To Abdul-Malik</title>
+    <title>contact Abdul-Malik</title>
+
+    <link rel="icon" href="/images/home/Logo-2.png" type="image/icon type" />
 
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/contact.css" />
@@ -70,13 +72,19 @@
           <p class="my-details">
             <i class="fas fa-phone-alt contact-icon"></i> 076 497 1338
           </p>
+          <a
+            class="my-details-link"
+            href="mailto:abdulmalikmohamed360@gmail.com"
+          >
+            <p class="my-details">
+              <i class="fas fa-envelope contact-icon"></i>
+              abdulmalikmohamed360@gmail.com
+            </p>
+          </a>
+
           <p class="my-details">
-            <i class="fas fa-envelope contact-icon"></i>
-            abdulmalikmohamed360@gmail.com
-          </p>
-          <p class="my-details">
-            <i class="fas fa-map-marker-alt contact-icon"></i> Cape Town, South
-            Africa
+            <i class="fas fa-map-marker-alt contact-icon"></i> Mitchell's Plain,
+            Cape Town
           </p>
         </div>
 
@@ -112,39 +120,44 @@
             method="POST"
             target="_blank"
           >
-            <input
-              class="form-input"
-              type="text"
-              name="name"
-              id="name"
-              required
-              placeholder="Full Name"
-            />
-            <input
-              class="form-input"
-              type="email"
-              name="email"
-              id="email"
-              required
-              placeholder="example@gmail.com"
-            />
-            <input
-              class="form-input"
-              type="tel"
-              name="contact"
-              id="cell"
-              required
-              placeholder="072 123 4567"
-            />
+            <div class="email-input">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Full Name"
+              />
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="example@gmail.com"
+              />
+              <input
+                class="form-input"
+                type="tel"
+                name="contact"
+                id="cell"
+                required
+                placeholder="072 123 4567"
+              />
+            </div>
 
-            <input
+            <textarea
               class="form-input"
               type="text"
               name="message"
               id="message"
               required
               placeholder="Type your message here"
-            />
+              cols="30"
+              rows="5"
+            ></textarea>
+
             <button class="send-button" type="submit">Send</button>
           </form>
         </div>

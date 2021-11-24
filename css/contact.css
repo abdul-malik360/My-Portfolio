@@ -1,4 +1,4 @@
-#contact {
+#contactx {
   animation: transitionIn 0.75s;
 }
 
@@ -42,7 +42,6 @@ body {
 .contact-heading {
   font-size: 80px;
   color: #1d3557;
-  margin-bottom: 2%;
   text-align: center;
 }
 .contact-heading-split {
@@ -56,7 +55,7 @@ body {
   justify-content: space-around;
   color: #1d3557;
   font-size: 20px;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .my-details {
@@ -74,8 +73,20 @@ body {
   color: #a8dadc;
 }
 
+.my-details:hover {
+  color: white;
+}
+
+.my-details-link {
+  /* color: #a8dadc; */
+  text-decoration: none;
+}
+
 .contact-icon {
   color: #1d3557;
+  background-color: #a8dadc;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .contact-me-container {
@@ -89,7 +100,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 20px;
   margin: 20px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   height: 100%;
 }
 
@@ -114,10 +125,11 @@ h3 {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 
   background: #a8dadc;
   width: 50%;
+  padding: 5px;
 
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
@@ -150,11 +162,20 @@ h3 {
   margin-top: 10px;
 }
 
+.email-input {
+  display: flex;
+  flex-direction: row;
+}
+
 .form-input {
-  padding: 5px;
-  margin: 15px;
+  padding: 10px;
+  margin: 5px;
   border: none;
+  border-radius: 10px;
   background-color: #f1faee;
+
+  width: 100%;
+  align-self: center;
 }
 
 .send-button {
@@ -163,16 +184,15 @@ h3 {
   background-color: #f1faee;
   border-radius: 10px;
   padding: 10px;
-  margin: 20px;
+  /* margin: 20px; */
   width: 20%;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-self: center;
 
   transition: 0.3s;
 
   font-size: 15px;
+
+  align-self: center;
 }
 
 .send-button:hover {
@@ -197,6 +217,12 @@ h3 {
   color: #1d3557;
 
   border-radius: 50%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -226,6 +252,16 @@ h3 {
   }
 
   form {
+    width: 100%;
+  }
+
+  .email-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    position: relative;
     width: 100%;
   }
 }
