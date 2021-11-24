@@ -93,6 +93,9 @@ footer {
   align-items: center;
   background-color: #457b9d;
   padding: 15px;
+
+  position: fixed;
+  width: 100%;
 }
 
 .footer-contact-btn {
