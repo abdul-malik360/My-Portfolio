@@ -291,6 +291,14 @@
   cursor: pointer;
 }
 
+.owl-nav-right:hover {
+  color: #1d3557;
+}
+
+.owl-nav-left:hover {
+  color: #1d3557;
+}
+
 /* passion board */
 .passion-board {
   display: flex;
