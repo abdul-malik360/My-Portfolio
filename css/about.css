@@ -517,6 +517,16 @@
     cursor: grab;
   }
 
+  .owl-nav-right {
+    right: 30px;
+    font-size: 55px;
+  }
+
+  .owl-nav-left {
+    left: 30px;
+    font-size: 55px;
+  }
+
   .my-details-container {
     width: 100%;
   }
