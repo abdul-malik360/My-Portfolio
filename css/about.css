@@ -273,6 +273,23 @@
   color: #f1faee;
   text-align: center;
 }
+.owl-nav-right {
+  position: fixed;
+  top: 50%;
+  right: 55px;
+  font-size: 55px;
+  color: #a8dadc;
+  cursor: pointer;
+}
+
+.owl-nav-left {
+  position: fixed;
+  top: 50%;
+  left: 55px;
+  font-size: 55px;
+  color: #a8dadc;
+  cursor: pointer;
+}
 
 /* passion board */
 .passion-board {

@@ -213,6 +213,10 @@ showDevelopment();
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     nav: true,
+    navText: [
+      '<i class="fa fa-angle-left owl-nav-left" ></i>',
+      '<i class="fa fa-angle-right owl-nav-right" aria-hidden="true"></i>',
+    ],
     items: 1,
     margin: 0,
     loop: false,
