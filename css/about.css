@@ -518,12 +518,12 @@
   }
 
   .owl-nav-right {
-    right: 2px;
+    right: 0;
     font-size: 55px;
   }
 
   .owl-nav-left {
-    left: 2px;
+    left: 0;
     font-size: 55px;
   }
 
