@@ -205,10 +205,8 @@
 
   border-radius: 10px;
   width: 100%;
-  overflow-y: auto;
 
   height: 60vh;
-  overflow: scroll;
 }
 .sub-heading {
   display: flex;
@@ -219,11 +217,9 @@
 }
 
 .resume-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  margin: 50px;
 }
+
 .resume-mini-container {
   background-color: #457b9d;
   color: #a8dadc;
@@ -236,6 +232,9 @@
   height: 50vh;
   cursor: grab;
   margin: 20px;
+}
+.resume-mini-container:hover {
+  cursor: pointer;
 }
 .resume-title-container {
   display: flex;
@@ -272,6 +271,7 @@
   margin-top: 10px;
   font-style: italic;
   color: #f1faee;
+  text-align: center;
 }
 
 /* passion board */
