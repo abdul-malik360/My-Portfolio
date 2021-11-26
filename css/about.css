@@ -485,13 +485,6 @@
     margin: 20px;
   }
 
-  .resume-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-    margin: 50px;
-  }
-
   .resume-content.active {
     padding: 20;
   }
