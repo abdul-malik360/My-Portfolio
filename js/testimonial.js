@@ -31,7 +31,7 @@ let testimonials = [
     imgAlt: "Picture of Justin",
     name: "Justin Calvert",
     title: "Colleague",
-    message: "Abdul-Malik is a very helpful person and a hardworker",
+    message: "Abdul-Malik is a very helpful person and a hardworker.",
   },
 
   {
@@ -49,7 +49,7 @@ let testimonials = [
     name: "Aaliyah Jardine",
     title: "Colleague",
     message:
-      "Abdul-Malik carries himself with good energy and is a real go getter. He always goes out of his way to help others. Definitely someone you can count on and look up to",
+      "Abdul-Malik carries himself with good energy and is a real go getter. He always goes out of his way to help others. Definitely someone you can count on and look up to.",
   },
 
   {

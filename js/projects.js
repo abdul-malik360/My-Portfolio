@@ -24,7 +24,7 @@ let projects = [
     imgALT: "A javascript calculator",
     title: "Calculator",
     techStack: "JavaScript",
-    description: "A calculator created using Javascript",
+    description: "A calculator created using Javascript.",
     githubURL: "https://github.com/abdul-malik360/jscalculator",
     liveProjectURL: "https://gallant-jackson-9fbc52.netlify.app/",
     id: "js-calculator",
@@ -34,7 +34,8 @@ let projects = [
     imgALT: "A BMI Calculator",
     title: "BMI Calculator",
     techStack: "Python",
-    description: "A BMI Calculator",
+    description:
+      "A body mass index calculator to calculate the ideal weight of a male or female using their weight, height, gender and age.",
     githubURL:
       "https://github.com/abdul-malik360/BMI_Calculator/blob/main/BMI_Calculator.py",
     liveProjectURL:
@@ -46,7 +47,8 @@ let projects = [
     imgALT: "A sneaker site",
     title: "Sneaker Site",
     techStack: "HTML/CSS",
-    description: "A sneaker site implementing the basics of a website",
+    description:
+      "One of my first websites, a sneaker site implementing the basics of a website.",
     githubURL: "https://github.com/abdul-malik360/Sneaker_Site",
     liveProjectURL: "https://affectionate-bose-3983db.netlify.app/",
     id: "sneaker-site",
@@ -56,7 +58,8 @@ let projects = [
     imgALT: "A Weather app",
     title: "A Weather app",
     techStack: "Python",
-    description: "A Weather app",
+    description:
+      "A weather application that fetches data from a weather api by inserting a location into its input box.",
     githubURL:
       "https://github.com/abdul-malik360/requests/blob/main/challenge.py",
     liveProjectURL: "https://replit.com/@abdulmalik360/requests#challenge.py",
@@ -78,8 +81,7 @@ let projects = [
     imgALT: "An Addition Calculator",
     title: "Addition Calculator",
     techStack: "Python",
-    description:
-      "Defining functions in python to create a program adding numbers",
+    description: "A basic python calculator that adds two numbers.",
     githubURL:
       "https://github.com/abdul-malik360/tkinter/blob/main/GUI_Task.py",
     liveProjectURL: "https://replit.com/@abdulmalik360/tkinter#GUI_Task.py",
@@ -102,7 +104,7 @@ let projects = [
     title: "Temperature Converter",
     techStack: "Python",
     description:
-      "Defining functions in python to create a program converting temperatures fahrenheit to celcius and vice versa.",
+      "A temperature converter app that converts temperatures from fahrenheit to celcius and vice versa.",
     githubURL:
       "https://github.com/abdul-malik360/temperature_converter/blob/main/temp_converter-task.py",
     liveProjectURL:
@@ -114,7 +116,8 @@ let projects = [
     imgALT: "A patient app",
     title: "Sick Patient App",
     techStack: "Python",
-    description: "A patient app",
+    description:
+      "A patient app that tells patients how much their treatment will cost.",
     githubURL:
       "https://github.com/abdul-malik360/Creating_a_class/blob/main/oop_task.py",
     liveProjectURL:
@@ -126,7 +129,8 @@ let projects = [
     imgALT: "A Pokedex",
     title: "Pokedex",
     techStack: "JavaScript",
-    description: "A Pokedex using Javascript",
+    description:
+      "A Pokemon Index that catalogues and provides information regarding the various species of Pokemon.",
     githubURL: "https://github.com/abdul-malik360/Pokedex",
     liveProjectURL: "https://naughty-kowalevski-9438ab.netlify.app/",
     id: "pokedex",
@@ -136,7 +140,8 @@ let projects = [
     imgALT: "",
     title: "Error Handling",
     techStack: "Python",
-    description: "Savings Program",
+    description:
+      "An app that checks if you saved up enough money to qualify you for a trip.",
     githubURL:
       "https://github.com/abdul-malik360/Error_Handling/blob/main/task.py",
     liveProjectURL: "https://replit.com/@abdulmalik360/ErrorHandling#task.py",
@@ -148,7 +153,7 @@ let projects = [
     imgALT: "Nishaat Williams Portfolio",
     title: "Ethereal Fungus",
     techStack: "HTML/CSS",
-    description: "A portfolio of my friend's work",
+    description: "An Animation student's portfolio.",
     githubURL: "https://github.com/abdul-malik360/Portfolio-Roopen",
     liveProjectURL: "https://etherealfungus.netlify.app/",
     id: "Nishaat-portfolio",
@@ -159,7 +164,8 @@ let projects = [
     imgALT: "QAT Motors",
     title: "QAT Motors Website",
     techStack: "JavaScript",
-    description: "A website for Qat Motors",
+    description:
+      "A website for clients of Qat Motors to view their services and contact information and also to sign up and register to book in their vehicles.",
     githubURL: "https://github.com/abdul-malik360/Final_Project-Frontend",
     liveProjectURL: "https://qat-motors.netlify.app/",
     id: "Qat-Motors",
@@ -170,7 +176,8 @@ let projects = [
     imgALT: "MyPOS",
     title: "MyPOS",
     techStack: "JavaScript",
-    description: "A website for My Point of Sale ",
+    description:
+      "MyPOS is an ecomerce website for customers to add food to their cart and order online.",
     githubURL: "https://github.com/abdul-malik360/Javascript_EOMP",
     liveProjectURL: "https://optimistic-benz-002fcf.netlify.app/",
     id: "MyPOS",
