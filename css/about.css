@@ -261,6 +261,8 @@
   height: 50vh;
   cursor: grab;
   margin: 20px;
+  overflow: hidden;
+  overflow: scroll;
 }
 .resume-mini-container:hover {
   cursor: pointer;
