@@ -14,7 +14,6 @@ footer {
   border: 2px solid #1d3557;
 
   border-radius: 50px;
-  transition: 0.6s;
   font-weight: 600;
   font-size: 13px;
   padding: 5px;
@@ -23,13 +22,11 @@ footer {
   color: #a8dadc;
   border: 2px solid #a8dadc;
   border-radius: 50px;
-  transition: 0.6s;
 }
 
 .footer-text {
   color: #1d3557;
   text-decoration: none;
-  transition: 0.6s;
 }
 .footer-text:hover {
   color: #a8dadc;
@@ -39,12 +36,10 @@ footer {
   margin: 5px;
   color: #1d3557;
   font-size: 25px;
-  transition: 0.6s;
 }
 
 .footer-icon:hover {
   color: #a8dadc;
-  transition: 0.6s;
 }
 
 .footer-tooltip {

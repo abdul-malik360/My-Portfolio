@@ -19,6 +19,22 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+/* scroll bar colors */
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d3557;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a8dadc;
+  border-radius: 6px;
+}
+
 #portfolio {
   background-color: #457b9d;
   width: 100%;

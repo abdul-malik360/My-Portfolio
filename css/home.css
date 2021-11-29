@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center;
 
-  height: 92vh;
+  height: 100vh;
 }
 .home-heading {
   font-size: 80px;
@@ -65,8 +65,9 @@
 .welcome-btn {
   display: flex;
   justify-content: center;
-  transition: 0.6s;
   text-decoration: none;
+
+  transition: 0.6s;
 
   color: #1d3557;
   border: 2px solid #1d3557;
@@ -75,7 +76,6 @@
   padding: 10px;
   margin-top: 2%;
   text-decoration: none;
-  transition: 0.6s;
   font-weight: 600;
   font-size: 13px;
 }
@@ -83,7 +83,6 @@
   color: #a8dadc;
   border: 2px solid #a8dadc;
   background-color: #1d3557;
-  transition: 0.6s;
 }
 
 footer {
@@ -106,7 +105,6 @@ footer {
   border: 2px solid #a8dadc;
 
   border-radius: 50px;
-  transition: 0.6s;
   font-weight: 600;
   font-size: 13px;
   padding: 5px;
@@ -115,11 +113,15 @@ footer {
   color: #f1faee;
   border: 2px solid #f1faee;
   border-radius: 50px;
-  transition: 0.6s;
 }
 
 .footer-text {
   color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  color: #f1faee;
   text-decoration: none;
 }
 
@@ -128,12 +130,10 @@ footer {
   margin: 5px;
   color: #a8dadc;
   font-size: 25px;
-  transition: 0.6s;
 }
 
 .footer-icon:hover {
   color: #f1faee;
-  transition: 0.6s;
 }
 
 .footer-tooltip {
