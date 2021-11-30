@@ -149,6 +149,18 @@ let projects = [
   },
 
   {
+    imgURL: "../images/projects/LottoApp.png",
+    imgALT: "",
+    title: "Lotto App",
+    techStack: "Python",
+    description:
+      "A game for users to pick 6 random numbers 3 times to see if they won any prizes.",
+    githubURL: "https://github.com/abdul-malik360/Lotto_App",
+    liveProjectURL: "https://replit.com/@abdulmalik360/LottoApp#main.py",
+    id: "lotto-app",
+  },
+
+  {
     imgURL: "../images/projects/Ethereal.png",
     imgALT: "Nishaat Williams Portfolio",
     title: "Ethereal Fungus",
