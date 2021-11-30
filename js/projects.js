@@ -194,6 +194,18 @@ let projects = [
     liveProjectURL: "https://optimistic-benz-002fcf.netlify.app/",
     id: "MyPOS",
   },
+
+  {
+    imgURL: "../images/projects/",
+    imgALT: "A picture of my count down timer app",
+    title: "Count Down Timer",
+    techStack: "JavaScript",
+    description:
+      "A count down timer app that allows it's users to enter a date and the outcome will count down till the entered date.",
+    githubURL: "https://github.com/abdul-malik360/Count-down-app",
+    liveProjectURL: "https://my-count-down-timer-app.netlify.app/",
+    id: "count-down-app",
+  },
 ];
 
 function projectPicture(image) {
