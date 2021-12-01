@@ -196,7 +196,7 @@ let projects = [
   },
 
   {
-    imgURL: "../images/projects/",
+    imgURL: "../images/projects/CountDownApp.png",
     imgALT: "A picture of my count down timer app",
     title: "Count Down Timer",
     techStack: "JavaScript",
