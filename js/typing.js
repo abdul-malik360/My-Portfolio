@@ -1,6 +1,6 @@
 // typing my name
 let i = 0,
-  myName = "Abdul-Malik Mohamed.";
+  myName = "Abdul-Malik.";
 
 const typingName = () => {
   if (i < myName.length) {
