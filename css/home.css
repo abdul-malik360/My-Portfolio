@@ -44,6 +44,8 @@
   text-shadow: 3px 3px 3px #a8dadc;
   margin-bottom: 10%;
   overflow: hidden;
+  top: 100px;
+  position: fixed;
 }
 
 #heading-typed {
