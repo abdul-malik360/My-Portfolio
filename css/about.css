@@ -652,10 +652,12 @@ body::-webkit-scrollbar-thumb {
 
   .skill-icon {
     font-size: 10px;
+    text-align: center;
   }
 
   .passion-icon {
     font-size: 10px;
+    text-align: center;
   }
 
   .icon {
