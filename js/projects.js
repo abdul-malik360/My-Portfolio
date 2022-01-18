@@ -210,7 +210,7 @@ let projects = [
 
 function projectPicture(image) {
   let projectPicture = `<div class="project-card" techStack=${image.techStack} onclick="toggleModal('${image.id}')" >
-        <div class="img-container">
+        <div class="img-container fade">
         <img src="${image.imgURL}" alt="${image.imgALT}">
         <div><i class="far fa-eye"></i></div>
         </div>
@@ -276,13 +276,12 @@ function filterCards(category) {
     }
     return;
   }
+  let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
 
   for (card of cards) {
     console.log(card);
     card.style.display = "none";
   }
-
-  let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
 
   for (card of selectedCards) {
     card.style.display = "block";
